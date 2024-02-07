@@ -1,0 +1,13 @@
+
+public class backtracking{
+    public static void main(String[] args) {
+        pri(1, 5);
+    }
+    public static void pri(int i,int j){
+        if(i>j){
+            return ;
+        }
+        pri(i+1,j);
+        System.out.println(i);
+    }
+}
