@@ -1,0 +1,17 @@
+public class palindrome {
+    public static void main(String[] args) {
+        pali(0,"MADAM");
+    }
+    public static void pali(int i, String s ){
+        if(i<=s.length()/2){
+            System.out.println("true");
+            return;
+        }
+        if(s.charAt(i)!=s.charAt(s.length()-i-1)){
+            System.out.println("false");
+            return;
+        }
+        pali( i+1, s);
+        return;
+    }
+}
